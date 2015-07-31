@@ -1,0 +1,128 @@
+@media only screen and (max-width:635px) {
+
+	#dateAnimation {
+		width: 
+	}
+
+}
+@media only screen and (max-width:605px) {
+
+	.mrmrs {
+		width:  300px !Important;
+		font-size:  50px !Important;
+		margin-top:  80px;
+	}
+
+}
+@media only screen and (max-width:415px) {
+    
+   .bgTitleContainer{
+       width: 400px !Important;
+       font-size: 50px !Important;
+   }
+    
+    .bgText{
+        width: 350px !Important;
+    }
+    header{
+        background-size: contain !Important;
+        background-repeat: no-repeat !Important;
+        height: 100% !Important;
+        display: flex !Important;
+        flex-direction: column !Important;
+        justify-content: flex-start !Important;
+        align-items: center;
+        background-color: black !Important;
+    }
+    
+    .mobileHeader{
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10%;
+        background-size: contain !Important;
+        background-repeat: no-repeat;
+        display: flex !Important;
+        width: 100% !Important;
+        height: 100%;
+        font-family: 'Pinyon Script', cursive;
+        font-size: 40px;
+        text-align: center !Important;
+    }
+    
+    .extraMargin{
+        margin-top: 0px;
+    }
+    
+    .mrmrs{
+        margin-top: 0px;
+        
+    }
+    
+    .lastNameContainer{
+        color: white !Important;
+        margin-top: 50px !Important;
+        visibility: hidden;
+        
+    }
+
+}
+@media only screen and (max-width:385px) {
+
+	.bgTitleContainer {
+		width:  300px !Important;
+		font-size:  41px !Important;
+	}
+
+	.bgText {
+		width:  300px;
+	}
+    
+    .mrmrs{
+        border-style: none !Important;
+    }
+    
+    .lastNameContainer{
+        font-size: 60px !Important;
+    }
+
+}
+
+@media only screen and (max-width:325px){
+    
+    .toggle{
+        font-size: 25px;
+    }
+
+    .mrmrs{
+        border-style: none !Important;
+        
+    }
+    
+    .extraMargin{
+        margin-top: 10px;
+    }
+    
+    .lastNameContainer{
+        font-size: 45px !Important;
+    }
+    
+    .peopleTitle{
+        font-size: 35px;
+    }
+    
+    .detailsTitle{
+        font-size: 40px;
+        width: 300px;
+    }
+    
+    .dateContainer{
+        font-size: 40px !Important;
+        width: 300px !Important;
+    }
+    
+    .bgText{
+        width: 300px !Important;
+    }
+
+}

@@ -1,0 +1,288 @@
+
+
+.navbar-inner {
+    background: transparent;
+    
+}
+header {
+    background-image: url(img/weddingHeroImage.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.mobileHeader{
+    display: none;
+}
+
+.nav {
+    font-size: 30px;
+    font-family: CaviarDreams;
+    display: flex !Important;
+    width: 100%;
+    justify-content: space-around !Important;
+}
+
+.customNav {
+    color: Black !Important;
+    padding-left: 30px !Important;
+    padding-right: 30px !Important;
+}
+
+.customBrand {
+    color: black !Important;
+    font-size: 40px;
+}
+
+.mrmrs {
+    border-width: 13.88888888888889px;
+    border-color: #ffffff;
+    border-style: solid;
+    width: 480px;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    
+    
+}
+
+.mrmrsText {
+    font-family: BirdsofParadise;
+    font-size: 65px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 15px;
+    width: 480px;
+    height: 131px;
+}
+
+.lastNameContainer {
+    font-family: 'Pinyon Script', cursive;
+    margin-top: 400px;
+    color: black;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+.extraPadding {
+    margin-top: 10%;
+}
+
+.navbar {
+    border: #040404;
+}
+
+.dateContainer {
+    border-color: #040404;
+    border-style: solid;
+    border-width: 13.88888888888889px;
+    width: 249px;
+    
+    text-align: center;
+    font-family: CaviarDreams;
+    font-size: 60px;
+    
+}
+
+.align-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#datePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.dateTitle {
+    
+}
+
+.dateNumeric {
+    background-image: url(img/dateNumeric.png);
+    background-size: contain;
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+
+
+
+
+
+#brideandGroom {
+    background-color: black;
+    width: 100%;
+    height: 674px;
+}
+
+.brideandgroomtext {
+    border-width: 13px;
+    height: 200px;
+    width: 520px;
+    border-color: #ffffff;
+    border-style: solid;
+    color: white;
+    text-align: center;
+    font-family: CaviarDreams;
+    font-size: 65px;
+}
+
+#brideandgroomtitle {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.imgandTxtContainer {
+    display: flex;
+    height: 500px;
+    width: 500px;
+}
+
+.aboutText {
+    color: white;
+    width: 100%;
+}
+
+.brideandgroom {
+    background-color: black;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bgTitleContainer {
+    color: black;
+    text-align: center;
+    border-color: black;
+    border: solid;
+    border-width: 13.88888888888889px;
+    width: 450px;
+    margin-top: 20px;
+    font-family: CaviarDreams;
+    font-size: 60px;
+    
+}
+
+
+
+.bgPage {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bgText {
+    color: black;
+    font-size: 15px;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+ul {
+    margin-right: 50px;
+    margin-left: -35px;
+    
+}
+
+.datePageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.social-buttons {
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social {
+    color: white;
+    margin: 5px;
+}
+
+.social:hover{
+    color: #c3c3c3;
+    
+}
+
+
+.cuspadding {
+    margin-top: 40px;
+}
+
+
+
+
+
+#locationAddress {
+    visibility: hidden;
+}
+
+#brideAnimation {
+    visibility: hidden;
+}
+
+#bride1Animation {
+    visibility: hidden;
+}
+
+#bride2Animation {
+    visibility: hidden;
+}
+
+#bride3Animation {
+    visibility: hidden;
+}
+
+#bride4Animation {
+    visibility: hidden;
+}
+
+#groom4Animation {
+    visibility: hidden;
+}
+
+#groom3Animation {
+    visibility: hidden;
+}
+
+#groom2Animation {
+    visibility: hidden;
+}
+
+#groom1Animation {
+    visibility: hidden;
+}
+
+#groomAnimation {
+    visibility: hidden;
+}

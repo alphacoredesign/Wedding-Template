@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Our Wedding</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- My custom styles -->
+    <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="media-queries.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- jQuery Library -->
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- page scroll effect -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/cbpAnimatedHeader.min.js"></script>
+    
+<!-- GOOGLE MAPS API -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXiw4cYttYV1aoEDhGaQmfpta2Pancp8I">
+    </script>
+    <script type="text/javascript"
+         src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+    </script>
+    <script>
+        function initialize() {
+          var mapOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(36.131, -95.937)
+          };
+
+          var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+          var infowindow = new google.maps.InfoWindow();
+
+          var marker = new google.maps.Marker({
+              position: map.getCenter(),
+            map: map,
+            // Define the place with a location, and a query string.
+            place: {
+              location: {lat: 36.131, lng: -95.937},
+              query: 'Our Wedding, Tulsa, Ok'
+
+            },
+            // Attributions help users find your site again.
+            attribution: {
+              source: 'Last Name Wedding',
+              webUrl: 'maps.google.com'
+            }
+          });
+            google.maps.event.addListener(map, 'center_changed', function() {
+                // 3 seconds after the center of the map has changed, pan back to the
+                // marker.
+                window.setTimeout(function() {
+                  map.panTo(marker.getPosition());
+                }, 3000);
+              });
+
+          // Construct a new InfoWindow.
+          var infowindow = new google.maps.InfoWindow({
+            content: 'Our Wedding'
+          });
+
+          // Opens the InfoWindow when marker is clicked.
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+            
+        }
+    </script>
+</head>
+
+<body id="page-top" class="index" onload="initialize()">
+
+    <input type="checkbox" id="sidebartoggler" name="" value=""/>
+        
+<div class="page-wrap">
+ 
+    <label for="sidebartoggler" class="toggle">☰</label>
+ 
+  <div class="page-content">
+  
+<!-- START OF THE HEADER -->  
+   <header>
+       <div class="mrmrs extraMargin">
+           Mr. & Mrs.
+       </div>
+       <div class="lastNameContainer">
+        <p>Last Name</p>
+       </div>
+<!-- ONLY SHOWS ON MOBILE DEVICES -->
+       <div class="mobileHeader">
+           Last Name
+       </div>
+       <i class="fa fa-angle-double-down fa-2x floating"></i>
+       
+   </header>
+<!-- END OF THE HEADER -->
+
+<!-- START OF THE DATE PAGE -->
+
+    <section class="datePageContainer">
+      <div id="datePage">
+          <div class="dateContainer extraPadding">
+              Date
+          </div>   
+        </div>
+        <div class="dateNumeric" id="dateAnimation">  
+        </div>
+    </section>
+<!-- END OF THE DATE PAGE -->
+
+<!-- START OF THE DETAILS PAGE -->
+    <section class="detailsPage" id="detailsPg">
+        <div id="detailsWrapper">
+            <div class="detailsTitle cuspadding">
+                Details
+            </div>
+            <div class="locationTitle">
+                Location
+            </div>
+            <div class="locationAddress" id="locationAddress">
+                1234 wedding spot Ave <br>
+                Beautiful Place, CA <br>
+                
+            </div>
+<!-- GOOGLE MAPS -->
+            <div id="map-canvas" style="width: 80%; height: 500px">
+            </div>
+<!-- START OF THE PEOPLE IN THE WEDDING -->
+            <div class="peopleTitle">The Wedding Party</div>
+            
+<!-- START OF BRIDE SIDE FOR WEDDING -->
+                <div class="brideTitle" id="brideAnimation">Bride Side</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3" id="bride1Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="bride2Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="bride3Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="bride4Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                    </div>
+                </div>
+<!-- START OF GROOM SIDE FOR WEDDING -->
+                <div class="groomTitle" id="groomAnimation">Groom Side</div>
+           <div class="container groomMargin">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3" id="groom1Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="groom2Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="groom3Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                        <div class="col-md-3 col-sm-3" id="groom4Animation">
+                          <div class="name">Name</div>
+                           <img src="img/image3.jpg" class="img-circle" width="150px" height="150px"> 
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+<!-- END OF THE DETAILS PAGE -->
+     
+<!-- START OF THE BRIDE AND GROOM PAGE -->
+   <section class="bgPage" id="bg">
+       <div class="bgTitleContainer">
+           Bride & Groom
+       </div>
+       <div class="bgWrapper">
+           <div class="bgImage">
+               <img src="img/mobile-wedding-image.jpg" height="auto" width="500px">
+           </div>
+           <div class="bgText">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel purus ligula. Quisque est massa, elementum at sollicitudin at, eleifend a magna. Proin sodales mauris ac dignissim porta. Etiam nec lectus vitae erat vulputate iaculis. Vivamus pulvinar urna nisl, ultrices efficitur ante pulvinar id. Praesent venenatis consectetur ex, et maximus dolor congue id. Aenean blandit sem eu leo feugiat, sit amet semper libero congue. Fusce imperdiet dui eu augue dapibus, vitae lobortis augue dictum. Praesent sagittis, erat vitae euismod iaculis, purus nibh viverra lacus, sed dignissim purus justo tincidunt ex. Suspendisse tempor porta felis.</p>
+           
+           </div>
+       </div>
+   </section> 
+<!-- END OF THE BRIDE AND GROOM PAGE -->
+  
+  <footer class="customFooter">
+    <ul class="list-inline social-buttons">
+        <li><a class="social" href="#"><i class="fa fa-instagram fa-2x tossing"></i></a>
+        </li>
+        <li><a class="social" href="#"><i class="fa fa-facebook fa-2x tossing"></i></a>
+        </li>
+        <li><a class="social" href="#"><i class="fa fa-twitter fa-2x tossing"></i></a>
+        </li>
+    </ul>
+    <div class="copyright">
+        <i class="fa fa-copyright"> Dylan Dotolo Design</i>
+    </div>
+  </footer>
+   
+</div> 
+<!-- SLIDING NAVIGATION SIDEBAR -->
+    <div class="sidebar">
+        <ul>
+            <a class="page-scroll" href="#page-top">Home</a>
+            <a class="page-scroll" href="#datePage">Date</a>
+            <a class="page-scroll" href="#detailsPg">Details</a>
+            <a class="page-scroll" href="#bg">Us</a>
+        </ul>
+<!-- END OF SLIDING NAV BAR -->  
+    </div>   
+</div>          
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+    $(window).scroll(function() {
+    $('#locationAddress').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideUp");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#brideAnimation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideDown");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#bride1Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideRight");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#bride2Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideRight");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#bride3Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideLeft");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#bride4Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideLeft");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#groomAnimation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideDown");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#groom1Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideRight");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#groom2Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideRight");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#groom3Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideLeft");
+    }
+});
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    $('#groom4Animation').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+500) {
+    $(this).addClass("slideLeft");
+    }
+});
+});
+</script>
+</body>
+</html>
